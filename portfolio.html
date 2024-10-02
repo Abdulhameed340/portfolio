@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <link rel="stylesheet" href="./portfolio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navigation">
+    <h1>Abdul</h1>
+  <ul>
+  <li><a href="#about">ABOUT</a></li>
+  <li><a href="#what-i-do">WHAT I DO</a></li>
+  <li><a href="#work">WORKS</a></li>
+  <li><a href="#blog">BLOG</a></li>
+  <li><a href="#contact">CONTACT</a></li>
+  <li id="signOut"><button id="popOut">LOGOUT</button></li>
+
+<div id="logOut">
+  <form onclick= "validateLogout()"return false;>
+        <span id="close">&times;</span><br>
+        <h1>LOG OUT</h1>
+        <input type="password" name="password" id="password" placeholder="enter password"><br><br>
+        <input type="button"  id="button" value="logOut">
+    </form>
+    </div>
+    <script>
+        var font = document.getElementById('popOut');
+        var form = document.getElementById('logOut');
+        var span = document.getElementById('close');
+        font.onclick = function() {
+            form.style.display = "flex";
+            form.style.backgroundColor = 'rgba( 0, 0, 0, 0.2)';
+        span.onclick = function(){
+           form.style.display = 'none';
+        }
+;
+        }
+        function validateLogout() {
+            var pass= document.getElementById('password').value;
+            var login = '12345';
+            if(pass== login) {
+                window.location.href = "FORM-VALIDATE.html";
+            }
+            else if(pass==""){
+                alert('password required');
+            }
+          else{
+            alert("invalid password");
+          }  
+        };
+    </script>
+
+  </ul>
+  </nav>
+
+<section class="first">
+  <div class="desc">
+  <div class="social">
+    <h1 id="typed"></h1>
+
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-github"></i>
+    <i class="fa-brands fa-square-twitter"></i>
+    <i class="fa-brands fa-square-youtube"></i>
+    <i class="fa-brands fa-google-plus"></i>
+  </div>
+  <script>
+    var typed = new Typed("#typed",{
+        strings:["My name is Hameed", "A Developer"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop:true
+  
+   } ); 
+   </script>
+  </div>
+</section><br><br>
+
+<section  id="about" class="about">
+<div class="bit">
+  <img src="./freepic2.avif" alt="picture">
+</div>
+<div class="text">
+ <h1>I'm Abdul,<br> web Designer & web developer<br>from united State, california.</h1>
+ <p><br>i have a rich experience<br> in web design and development.also i am good
+  at html,css,javascript,wordpress,<br>php,jquery and bootstrap.i love
+  to talk with you about our unique approch.
+  feel free to contact me<br> writing an email with your project idea
+ </p><BR>
+ <a href="./freepic3.avif" id="download-resume">DOWNLOAD RESUME</a>
+</div>
+</section>
+
+<div id="what-i-do" class="what-i-do">
+  <h1>What I Do</h1>
+  <div class="flex-container">
+      <div>
+          <i class="fa-regular fa-copy"></i><br><br>
+          <h5>UI/UX DESIGN</h5><br>
+          <p>As a passionate UI/UX designer with over 5 years of experience, 
+              I specialize in creating intuitive and visually appealing interfaces.
+               My goal is to enhance user satisfaction by improving the usability,
+                accessibility,
+               and pleasure provided in the interaction with digital products.</p>
+      </div>
+      <div>
+          <i class="fa-regular fa-lightbulb"></i><br><br>
+          <h5>BRANDING IDENTITY</h5><br>
+          <p>With a keen eye for aesthetics and a strategic mindset, I 
+              specialize in creating distinctive and memorable brand identities.
+               My experience spans over 5 years, working with diverse clients to 
+               develop visual identities that resonate 
+              with their target audiences and stand out in the market.</p>
+      </div>
+      <div>
+          <i class="fa-solid fa-ruler"></i><br><br>
+          <h5>WEB DESIGN</h5><br>
+          <p>As a dedicated web designer with over 5 years of experience,
+               I specialize in creating engaging and user-friendly websites.
+                My expertise spans a variety of industries, and I am passionate about
+                 transforming
+               ideas into visually appealing and functional digital experiences.</p>
+      </div>
+      <div class="services">
+          <i class="fa-brands fa-android"></i><br><br>
+          <h5>MOBILE APPS</h5><br>
+          <p>As a skilled mobile app designer with over 5 years of experience,
+               I specialize in creating intuitive and engaging user experiences
+                for both iOS and Android platforms. My work focuses on combining 
+                functionality
+               with visually appealing designs to deliver seamless mobile interactions.</p>
+      </div>
+      <div>
+          <i class="fa-solid fa-chart-line"></i><br><br>
+          <h5>ANALYTICS</h5><br>
+          <p>As a UI/UX designer, I believe that data-driven decisions are crucial 
+              for creating effective and user-centered designs. My experience with
+              analytics involves using various tools to track user behavior, gather 
+              insights,
+               and optimize designs for better performance and user satisfaction.</p>
+      </div>
+      <div>
+          <i class="fa-solid fa-camera"></i><br><br>
+          <h5>PHOTOGRAPHY</h5><br>
+          <p>With a keen eye for detail and a passion for capturing moments, I have 
+              over 5 years of experience in professional photography. My expertise
+               spans various genres, including portrait, landscape, product, and
+                event photography. I aim to 
+              create visually compelling images that tell a story and evoke emotion.</p>
+      </div>
+  </div>
+</div>
+
+<section id="recent works">
+<div id="recent">
+  <div id="work"><h1>RECENT WORK</h1></div>
+  <ul id="recent-works-ul">
+    <li><a href="all">All</a></li>
+    <li><a href="branding">branding</a></li>
+    <li><a href="mockups">mockups</a></li>
+    <li><a href="ulkits">Ulkits</a></li>
+    <li><a href="photography">Photograaphy</a></li>
+  </ul>
+</div> 
+
+<section id="pictures">
+  <div id="images">
+<div><img src="./hotel1.avif" alt=""></div>
+<div><img src="./hotel3.avif" alt=""></div>
+<div><img src="./jimages5.avif" alt=""></div>
+<div><img src="./jimages1.avif" alt=""></div>
+<div><img src="./jimages2.avif" alt=""></div>
+<div><img src="./jimages3.avif" alt=""></div>
+  </div>
+
+</section>
+</section>
+
+
+<section id="blog">
+  <div id="blogger">
+    <div id="bloggest"><h1>LATEST BLOG</h1></div>
+    <div id="img">
+      <div><img src="./freepic4.avif" alt=""></div>
+      <div><img src="./astrounant2.avif" alt=""></div>
+      <div><img src="./astrounant4.avif" alt=""></div>
+
+
+    </div>
+ </div>
+</section>
+
+
+
+<div id="article">
+  <div id="article-text">
+    <div>
+      <h3>By spite about do of do allow blush</h3><br><br>
+      <p>Quick six blind smart out burst.perfectly<br>funiture detension determine my dependingon to<br>
+      Add short water court fat</p>
+    </div>
+
+    <div>
+      <h3>By spite about do of do allow blush</h3><br><br>
+      <p>Quick six blind smart out burst.perfectly<br>funiture detension determine my dependingon to<br>
+      Add short water court fat</p>
+    </div>
+
+    <div>
+      <h3>By spite about do of do allow blush</h3><br><br>
+      <p>Quick six blind smart out burst.perfectly<br>funiture detension determine my dependingon to<br>
+      Add short water court fat</p>
+    </div>
+  </div>
+</div><br><br>
+
+<section id="contact">
+  <div class="contact-form">
+    <h2>Contact me</h2>
+    <form action="#" method="post">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Name *" required>
+      
+      <input type="text" name="Phone" placeholder="phone *" required><BR><BR>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email*" required>
+        <input type="text" name="subject" placeholder="Subject*" required><BR><BR>
+      </div>
+      <div class="form-group">
+        <input type="text" name="Message" placeholder="Message" required>
+      </div><BR>
+      <button type="submit"> SEND MESSAGE</button>
+    </form>
+  </div>
+  </section>
+
+  <div id="last">
+    <div id="last-social">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-github"></i>
+      <i class="fa-brands fa-square-twitter"></i>
+      <i class="fa-brands fa-square-youtube"></i>
+      <i class="fa-brands fa-google-plus"></i>
+    
+    <div>(c) 2024 Abdul. All right reserved</div>
+  </div>
+</div>
+
+
+  
+
+
+</body>
+</html>
